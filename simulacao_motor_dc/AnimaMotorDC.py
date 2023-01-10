@@ -49,6 +49,6 @@ while (t<15.0):
     print(x)
     x = MDC(x) 
     t = t + Ts
-    omega = 2*pi/5*x[0] #vec(1,0,0)
+    omega = x[0] #2*pi/5*x[0] #vec(1,0,0)
     eixo.rotate(angle=omega*Ts,axis=vector(1,0,0))
     curva.plot(t,x[0])
